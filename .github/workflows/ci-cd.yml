@@ -7,7 +7,7 @@ on:
       - '**' # Cualquier rama 
 
 # ===== Permisos del token automático de GitHub para que pueda "subir"(push del paso 4.) la imagen docker generada en el paso 3 al área de registro de GitHub 
-ghcr.io/michellmz/api-gobierno-sb =====
+# ghcr.io/michellmz/api-gobierno-sb =====
 permissions:
   contents: read
   packages: write

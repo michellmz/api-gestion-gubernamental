@@ -1,4 +1,4 @@
-package org.michellmz.api.gobierno;.dao;
+package org.michellmz.api.gobierno.dao;
 
 import java.util.List;
 
