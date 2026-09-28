@@ -2,8 +2,8 @@ package org.michellmz.api.gobierno.controller;
 
 import java.util.List;
 
-import org.lapaloma.examen.aaee.service.MiembroService;
-import org.lapaloma.examen.aaee.vo.Miembro;
+import org.michellmz.api.gobierno.service.MiembroService;
+import org.michellmz.api.gobierno.vo.Miembro;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

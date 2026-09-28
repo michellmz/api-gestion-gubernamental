@@ -5,8 +5,8 @@ package org.michellmz.api.gobierno.controller;
 
 import java.util.List;
 
-import org.lapaloma.examen.aaee.service.MinisterioService;
-import org.lapaloma.examen.aaee.vo.Ministerio;
+import org.michellmz.api.gobierno.service.MinisterioService;
+import org.michellmz.api.gobierno.vo.Ministerio;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
