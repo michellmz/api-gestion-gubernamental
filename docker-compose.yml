@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # 1. SERVICIO DE BASE DE DATOS
+  postgresql_mmz:
+    image: postgres:16
+    container_name: postgresql_mmz
+    restart: always
+    environment:
+      POSTGRES_USER: aaee_gobierno
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: gobierno_mmz
+    ports:
+      # Puerto externo (AWS) : Puerto interno (Contenedor)
+      - "2345:5432"
+
+  # 2. SERVICIO DE TU APLICACIÓN SPRING BOOT
+  app:
+    image: ghcr.io/michellemmz648/APIGestiónGubernamental:latest
+    container_name: aaee_gobierno_app_mmz
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      # Obliga a que la base de datos arranque antes que el Spring Boot
+      - postgresql_mmz
+    restart: always
