@@ -16,7 +16,7 @@ services:
 
   # 2. SERVICIO DE TU APLICACIÓN SPRING BOOT
   app:
-    image: ghcr.io/michellemmz648/APIGestiónGubernamental:latest
+    ghcr.io/michellmz/api-gestion-gubernamental:latest
     container_name: gobierno_app_mmz
     ports:
       - "8080:8080"
